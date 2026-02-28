@@ -1,0 +1,504 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* General styles */
+
+.container-custom {
+  width: 60%;
+  margin-inline: auto;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.section-heading {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.gray-bg {
+  background-color: #e4e4e4;
+}
+
+/* Banner styles */
+
+.banner {
+  background-image: linear-gradient(
+      to right,
+      black,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url("./images/banner.png");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  min-height: 70vh;
+}
+
+.banner-title {
+  font-size: 3.7rem;
+  line-height: 1.2;
+}
+
+.banner-description {
+  font-size: 1rem;
+}
+
+.logo {
+  width: 100px;
+}
+
+.btn-primary {
+  background-color: #192b6c;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 10px 0 10px 0;
+  font-weight: 700;
+  transition: background-color 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.btn-primary:hover {
+  background-color: #0072ba;
+  color: black;
+  transform: scale(1.05);
+}
+
+.check-icon {
+  color: #0279c7;
+}
+
+.statement {
+  font-size: 1rem;
+}
+
+/* About us styles */
+.about-description {
+  font-size: 1rem;
+}
+
+.about-img {
+  border-radius: 20px;
+}
+
+/* Second-section styles */
+
+.card-icon {
+  font-size: 35px;
+}
+
+.card-custom {
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.card-custom .card-title {
+  font-weight: 600;
+}
+
+.card-custom .card-text {
+  font-size: 1rem;
+}
+
+/* Testimonials section styles */
+
+.testimonials {
+  background-color: #fff;
+}
+
+.testimonial-card {
+  padding: 20px;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.author-img img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.author-info h5 {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.rating {
+  color: #ffac32;
+}
+
+.carousel-indicators {
+  bottom: -60px;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  background-color: #7d7d7d !important;
+  margin: 0 5px;
+}
+
+.carousel-indicators button.active {
+  background-color: #bebebe;
+}
+
+/* Our programs section styles */
+
+.our-programs .card-text {
+  font-size: 1rem;
+}
+
+.our-programs .card-title {
+  font-weight: 600;
+}
+
+.our-programs .card {
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.our-programs img {
+  border-radius: 10px;
+}
+
+/* Our team section styles */
+
+.our-team .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.our-team .teamate-name {
+  width: 40%;
+  margin-inline: auto;
+  font-weight: 600;
+}
+
+.our-team p {
+  font-size: 0.7rem;
+}
+
+/* Activities section */
+
+.activity-wrapper {
+  aspect-ratio: 1;
+  width: 100%;
+}
+
+.activity-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.activities-button {
+  display: flex;
+  justify-content: center;
+}
+
+/* Contact us section */
+
+.contact-description {
+  font-size: 0.7rem;
+}
+
+.text-gray {
+  color: #a0a0a0;
+}
+
+.contact-us .contact-details {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact-us .social-icon {
+  background-color: #bcb2b2;
+  padding: 10px;
+  color: #000000;
+  font-size: 20px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  border: 1px solid black;
+}
+
+.btn-submit {
+  width: 100%;
+  padding-block: 15px;
+  background-color: #192b6c;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease-in;
+}
+
+.btn-submit:hover {
+  background-color: #0072ba;
+  color: #000000;
+}
+
+/* Validation of inputs styles */
+
+.form-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Media Queries Responsive styling */
+
+@media (max-width: 1024px) {
+  .banner-title {
+    font-size: 2.5rem;
+  }
+
+  .banner-description {
+    font-size: 0.9rem;
+    width: 80%;
+  }
+
+  .btn-primary {
+    font-size: 0.85rem;
+  }
+
+  .statement {
+    font-size: 0.85rem;
+    width: 100%;
+  }
+
+  .banner {
+    background-size: auto;
+    min-height: 60vh;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  .card-custom .card-title {
+    font-size: 2.1rem;
+  }
+
+  .card-custom .card-text {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-card {
+    padding: 0px;
+  }
+
+  .our-programs .card-body {
+    padding: 8px;
+  }
+
+  .our-programs .card-title {
+    font-size: 1rem;
+  }
+
+  .our-programs .card-text {
+    font-size: 0.98rem;
+  }
+
+  .our-team .teamate-name {
+    width: 60%;
+  }
+
+  .activity-img {
+    width: 100%;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 1.8rem;
+  }
+
+  .banner-description {
+    font-size: 0.8rem;
+    width: 100% !important;
+  }
+
+  .btn-primary {
+    font-size: 0.8rem;
+  }
+
+  .statement {
+    font-size: 0.8rem;
+  }
+
+  .banner {
+    min-height: 55vh;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+  }
+
+  .container-custom {
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .card-custom .card-title {
+    font-size: 2.3rem;
+  }
+
+  .our-programs .card-body {
+    padding: 5px;
+  }
+
+  .our-programs .card-title {
+    font-size: 1rem;
+  }
+
+  .our-programs .card-text {
+    font-size: 1rem;
+  }
+
+  .our-team .row {
+    align-items: normal;
+  }
+
+  .our-team .teamate-name {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .our-team p {
+    font-size: 0.6rem;
+  }
+
+  .activity-img {
+    width: 100%;
+    height: 120px;
+  }
+
+  .activity-wrapper {
+    aspect-ratio: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner-title {
+    font-size: 2.5rem;
+  }
+
+  .banner-description {
+    font-size: 0.96rem;
+    width: 70% !important;
+  }
+
+  .btn-primary {
+    font-size: 0.9rem;
+  }
+
+  .statement {
+    font-size: 0.9rem;
+    width: 70%;
+  }
+
+  .container {
+    margin-inline: auto;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .container-custom {
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .card-custom .card-text {
+    font-size: 0.97rem;
+  }
+
+  .card-custom .card-title {
+    font-size: 2rem;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+
+  .author-img img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .testimonial-card {
+    padding: 10px;
+  }
+
+  .our-programs .card-title {
+    font-size: 1rem;
+  }
+
+  .our-programs .card-text {
+    font-size: 0.95rem;
+  }
+
+  .our-team p {
+    font-size: 0.7rem;
+  }
+
+  .our-team .teamate-name {
+    width: 30%;
+  }
+
+  .activity-img {
+    width: 100%;
+    height: 60px;
+  }
+
+  .activity-wrapper {
+    aspect-ratio: 0;
+  }
+}
